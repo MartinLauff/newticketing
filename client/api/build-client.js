@@ -4,7 +4,7 @@ export default ({ req }) => {
   if (typeof window === 'undefined') {
     /// we are on the server!
     return axios.create({
-      baseURL: 'http://www.ticketing-for-life.xyz /',
+      baseURL: 'http://www.ticketing-for-life.xyz/',
       headers: req.headers,
     });
   } else {
